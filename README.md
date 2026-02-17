@@ -6,7 +6,7 @@ Extract titles from top-performing YouTube videos — no coding required.
 
 Click the button below to open the tool directly in your browser:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sathyahq/youtube-title-extractor/blob/main/YouTube_Title_Extractor.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sathyahq/youtube-title-extractor/blob/claude/youtube-title-scraper-voZri/YouTube_Title_Extractor.ipynb)
 
 > No installation needed. Just click, fill in the form, and run.
 
