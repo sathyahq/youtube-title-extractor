@@ -1,43 +1,55 @@
 # YouTube Title Extractor & Generator
 
-Extract titles from top-performing YouTube videos, analyze what works, and generate optimized titles — no coding required.
+Enter a keyword, see top-performing YouTube titles, analyze what works, and generate optimized titles. No login required.
 
-## Quick Start (Google Colab)
+## How to Run (on your computer)
 
-Click the button below to open the tool directly in your browser:
+1. Make sure you have Python installed
+2. Open your terminal and run these commands one by one:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sathyahq/youtube-title-extractor/blob/claude/youtube-title-scraper-voZri/YouTube_Title_Extractor.ipynb)
+```
+git clone https://github.com/sathyahq/youtube-title-extractor.git
+cd youtube-title-extractor
+pip install -r requirements.txt
+streamlit run app.py
+```
 
-> No installation needed. Just click, fill in the form, and run.
+3. The app opens in your browser automatically
+
+## How to Deploy (free, online)
+
+Deploy on **Streamlit Community Cloud** so you can access it from anywhere:
+
+1. Go to [share.streamlit.io](https://share.streamlit.io)
+2. Sign in with your GitHub account
+3. Click **New app**
+4. Select this repo (`sathyahq/youtube-title-extractor`)
+5. Set **Main file path** to `app.py`
+6. Click **Deploy**
+
+Done. You get a public URL you can bookmark and use anytime.
 
 ## What It Does
 
-### Step 1: Scrape YouTube Titles
-- **Video URL mode** — Paste a YouTube video link to get its title and stats
-- **Search Results URL mode** — Paste a YouTube search page URL to extract all results
-- **Keyword Search mode** — Type any topic to find top-performing videos
-
-### Step 2: Analyze & Generate Titles
-- **Pattern Analysis** — See which title styles (questions, how-tos, lists, etc.) get the most views
-- **Title Length Sweet Spot** — Find the optimal title length for your topic
-- **Word Analysis** — Compare common words in high-view vs low-view titles
-- **AI Title Generation** — Generate optimized titles using Google Gemini (free API key) or template-based suggestions
+1. **Scrape** — Enter a keyword, get the top YouTube videos with titles, views, likes, duration, etc.
+2. **Analyze** — See which title patterns (questions, how-tos, numbers, etc.) get the most views
+3. **Generate** — Get AI-powered title suggestions based on what's actually working
 
 ## Features
 
-- View count, likes, comments, duration, upload date, and subscriber count
-- Sort by views, date, engagement, or subscribers
-- Title pattern performance analysis with visual bars
-- AI-powered title generation (optional free Gemini API key)
+- View count, likes, duration, upload date, and subscriber count
+- Title pattern performance charts
+- Title length sweet spot analysis
+- High-view vs low-view word comparison
+- AI-powered title generation (free Gemini API key, optional)
 - Template-based title generation (no API key needed)
-- Export results as CSV (opens in Excel / Google Sheets)
-- Titles-only mode for quick scanning
+- Download results as CSV
 
-## How to Use
+## Gemini API Key (optional, free)
 
-1. Click the **Open in Colab** button above
-2. Run **Step 1** (Setup) — wait for "Ready!"
-3. Fill in the form in **Step 2** — choose your mode, enter a keyword, click play
-4. Run **Step 3** — see title analysis and generate new titles
-   - (Optional) Add a free [Gemini API key](https://aistudio.google.com/apikey) for AI-powered generation
-5. Optionally run **Step 4** to download as CSV
+For AI-powered title generation, get a free API key:
+
+1. Go to [Google AI Studio](https://aistudio.google.com/apikey)
+2. Sign in with your Google account
+3. Click **Get API Key**
+4. Paste it in the sidebar of the app
